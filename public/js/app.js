@@ -5192,7 +5192,12 @@ var Example = /*#__PURE__*/function (_Component) {
     key: "toggleNewParticipantModal",
     value: function toggleNewParticipantModal() {
       this.setState({
-        newParticipantModal: !this.state.newParticipantModal
+        newParticipantModal: !this.state.newParticipantModal,
+        newParticipantData: {
+          name: "",
+          email: "",
+          password: ""
+        }
       });
     }
   }, {

@@ -15,7 +15,10 @@ export default class Example extends Component {
     }
     // Zone2: This to define the methods
     toggleNewParticipantModal() {
-        this.setState({ newParticipantModal: !this.state.newParticipantModal });
+        this.setState({ 
+            newParticipantModal: !this.state.newParticipantModal,
+            newParticipantData: { name: "", email: "", password: "" }
+         });
     }
 
     addParticipant() {
