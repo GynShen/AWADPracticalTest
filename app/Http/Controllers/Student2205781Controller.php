@@ -10,6 +10,6 @@ class Student2205781Controller extends Controller
     public function addUser(Request $req){
         $data = $req->all();
         Participant::create($data);
-        return ("sign up successful");
+        return ("Add successful");
     }
 }
